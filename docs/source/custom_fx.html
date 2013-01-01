@@ -1,8 +1,25 @@
-/*
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>The source code</title>
+  <link href="../resources/prettify/prettify.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="../resources/prettify/prettify.js"></script>
+  <style type="text/css">
+    .highlight { display: block; background-color: #ddd; }
+  </style>
+  <script type="text/javascript">
+    function highlight() {
+      document.getElementById(location.hash.replace(/#/, "")).className = "highlight";
+    }
+  </script>
+</head>
+<body onload="prettyPrint(); highlight();">
+  <pre class="prettyprint lang-js">/*
 
   This file is part of 'html5-sobrevivir'.
 
-  Copyright 2013 Sergio Lindo - <sergiolindo.empresa@gmail.com>
+  Copyright 2013 Sergio Lindo - &lt;sergiolindo.empresa@gmail.com&gt;
 
   'html5-sobrevivir' is free software: you can redistribute it and/or modify it
   under the terms of the GNU General Public License as published by the Free
@@ -15,18 +32,18 @@
   details.
 
   You should have received a copy of the GNU General Public License along with
-  'html5-sobrevivir'. If not, see <http://www.gnu.org/licenses/>.
+  'html5-sobrevivir'. If not, see &lt;http://www.gnu.org/licenses/&gt;.
 
 */
 ;
-/**
- * This class provides custom animations for DOM elements.
+<span id='custom_fx'>/**
+</span> * This class provides custom animations for DOM elements.
  * @class custom_fx
  * @singleton
  */
 define({
-	/**
-	 * Hide an element by fading it to transparent.
+<span id='custom_fx-method-fadeout'>	/**
+</span>	 * Hide an element by fading it to transparent.
 	 *
 	 * This method set the css display property to none.
 	 *
@@ -36,14 +53,14 @@ define({
 	 *
 	 * Examples:
 	 *
-	 *     <div id="divContainer">Once upon a time...</div>
+	 *     &lt;div id=&quot;divContainer&quot;&gt;Once upon a time...&lt;/div&gt;
 	 *     ...
 	 *     var element = getElementById('divContainer');
 	 *     custom_fx.fadeout(element);
 	 *
 	 * or
 	 *
-	 *     <div id="divContainer">Once upon a time...</div>
+	 *     &lt;div id=&quot;divContainer&quot;&gt;Once upon a time...&lt;/div&gt;
 	 *     ...
 	 *     custom_fx.fadeout('divContainer', function(element) {
 	 *         // Do something...
@@ -68,8 +85,8 @@ define({
 
 		return element;
 	},
-	/**
-	 * Display an element by fading them to opaque.
+<span id='custom_fx-method-fadein'>	/**
+</span>	 * Display an element by fading them to opaque.
 	 *
 	 * This method set the css display property to block.
 	 *
@@ -79,14 +96,14 @@ define({
 	 *
 	 * Examples:
 	 *
-	 *     <div id="divContainer" style="display:none">Once upon a time...</div>
+	 *     &lt;div id=&quot;divContainer&quot; style=&quot;display:none&quot;&gt;Once upon a time...&lt;/div&gt;
 	 *     ...
 	 *     var element = getElementById('divContainer');
 	 *     custom_fx.fadein(element);
 	 *
 	 * or
 	 *
-	 *     <div id="divContainer">Once upon a time...</div>
+	 *     &lt;div id=&quot;divContainer&quot;&gt;Once upon a time...&lt;/div&gt;
 	 *     ...
 	 *     custom_fx.fadein('divContainer', function(element) {
 	 *         // Do something...
@@ -115,3 +132,6 @@ define({
 		myFx.start(0, 1);
 	}
 });
+</pre>
+</body>
+</html>

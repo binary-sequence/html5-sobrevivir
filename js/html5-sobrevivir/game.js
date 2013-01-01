@@ -19,10 +19,20 @@
 
 */
 ;
+/**
+ * This class provides access to all necessary game stuff.
+ * @class game
+ * @singleton
+ */
 define( [],
 function() {
 
 	return {
+		/**
+		 * @property {String} state State of the game.
+		 *
+		 * It could be "gamelicense", "resourceslicenses", "gamemenu", "playgame" or "credits".
+		 */
 		state: "gamelicense"
 	}
 
