@@ -18,7 +18,7 @@
   'html5-sobrevivir'. If not, see <http://www.gnu.org/licenses/>.
 
 */
-#divGameLicense {
+#divGameLicense, #divResourcesLicenses {
 	background-color:white;
 	color:black;
 	font:normal 18px verdana;
@@ -27,7 +27,7 @@
 	width:90%;
 }
 
-#divGameLicense p.notice {
+#divGameLicense p.notice, #divResourcesLicenses p.notice {
 	color:#550099;
 	-webkit-animation:blink 1.5s step-end infinite;
 	-moz-animation:blink 1.5s step-end infinite;
@@ -41,24 +41,24 @@
 *******************************************************************************/
 
 @media screen and (max-width:1024px){
-	#divGameLicense {
+	#divGameLicense, #divResourcesLicenses {
 		font:normal 18px verdana;
 	}
 }
 @media screen and (max-width:700px){
-	#divGameLicense {
+	#divGameLicense, #divResourcesLicenses {
 		font:normal 14px verdana;
 	}
 }
 @media screen and (max-width:400px){
-	#divGameLicense {
+	#divGameLicense, #divResourcesLicenses {
 		font:normal 10px verdana;
 	}
-	#divGameLicense img {
+	#divGameLicense img, #divResourcesLicenses img {
 		height:auto;
 		width:30%;
 	}
-	#divGameLicense p.notice {
+	#divGameLicense p.notice, #divResourcesLicenses p.notice {
 		font:normal 16px verdana;
 	}
 }

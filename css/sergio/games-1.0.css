@@ -25,6 +25,10 @@ body {
 	overflow:hidden;
 }
 
+#divResourcesLicenses, #divGameMenu, #canvasGameScreen {
+	display:none;
+}
+
 #canvasGameScreen {
 	height:100%;
 	left:50%;
