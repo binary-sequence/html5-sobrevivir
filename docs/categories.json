@@ -1,0 +1,19 @@
+[
+	{
+		"name": "Modules",
+		"groups": [
+			{
+				"name": "html5-sobrevivir",
+				"classes": [
+					"game"
+				]
+			},
+			{
+				"name": "DOM manipulation",
+				"classes": [
+					"custom_fx"
+				]
+			}
+		]
+	}
+]
