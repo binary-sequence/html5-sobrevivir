@@ -30,7 +30,7 @@ respective creators and owners. These resources are all licensed under free
 licences. See credits for more information.
 
 
-## Juega
+## Juego
 
 [Juega aquí (¡Aún en desarrollo!)](http://binary-sequence.github.com/html5-sobrevivir/)
 
@@ -41,6 +41,7 @@ licences. See credits for more information.
 
 _Nota: Funciona correctamente en 'Google chrome 23.0' y 'Firefox 17.0'._
 
+[Documentación](http://binary-sequence.github.com/html5-sobrevivir/docs/)
 
 ## En proceso
 
