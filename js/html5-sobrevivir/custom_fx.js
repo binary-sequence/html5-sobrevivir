@@ -50,13 +50,13 @@ define({
 	 *     });
 	 */
 	fadeout: function(element, callback) {
-		var myFx = new Fx.Tween(element, {
+		var my_fx = new Fx.Tween(element, {
 			duration: 500,
 			link: 'cancel',
 			property: 'opacity'
 		});
 
-		myFx.addEvent('complete', function(element) {
+		my_fx.addEvent('complete', function(element) {
 			element.setStyle('display', 'none');
 
 			if(typeof(callback) !== 'undefined') {
@@ -64,7 +64,7 @@ define({
 			}
 		});
 
-		myFx.start(1, 0);
+		my_fx.start(1, 0);
 
 		return element;
 	},
@@ -98,13 +98,13 @@ define({
 			opacity: 0
 		});
 
-		var myFx = new Fx.Tween(element, {
+		var my_fx = new Fx.Tween(element, {
 			duration: 500,
 			link: 'cancel',
 			property: 'opacity'
 		});
 
-		myFx.addEvent('complete', function(element) {
+		my_fx.addEvent('complete', function(element) {
 			element.setStyle('display', 'block');
 
 			if(typeof(callback) !== 'undefined') {
@@ -112,6 +112,6 @@ define({
 			}
 		});
 
-		myFx.start(0, 1);
+		my_fx.start(0, 1);
 	}
 });

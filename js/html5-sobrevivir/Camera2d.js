@@ -55,13 +55,13 @@ define(function () {
 		 * @property {HTMLElement}
 		 * @private
 		 */
-		canvasGameScreen: null,
+		canvas_game_screen: null,
 		/**
 		 * Provides doble buffering.
 		 * @property {HTMLElement}
 		 * @private
 		 */
-		bufferGameScreen: null,
+		buffer_game_screen: null,
 		/**
 		 * Detect Android device.
 		 * @private
@@ -77,15 +77,15 @@ define(function () {
 		 * @constructor
 		 */
 		initialize: function() {
-			this.canvasGameScreen = $('canvasGameScreen');
-			this.canvasGameScreen.width = this.WIDTH;
-			this.canvasGameScreen.height = this.HEIGHT;
-			this.canvasGameScreen.context2d = this.canvasGameScreen.getContext('2d');
+			this.canvas_game_screen = $('canvasGameScreen');
+			this.canvas_game_screen.width = this.WIDTH;
+			this.canvas_game_screen.height = this.HEIGHT;
+			this.canvas_game_screen.context2d = this.canvas_game_screen.getContext('2d');
 
-			this.bufferGameScreen = document.createElement('canvas');
-			this.bufferGameScreen.width = this.canvasGameScreen.width;
-			this.bufferGameScreen.height = this.canvasGameScreen.height;
-			this.bufferGameScreen.context2d = this.bufferGameScreen.getContext('2d');
+			this.buffer_game_screen = document.createElement('canvas');
+			this.buffer_game_screen.width = this.canvas_game_screen.width;
+			this.buffer_game_screen.height = this.canvas_game_screen.height;
+			this.buffer_game_screen.context2d = this.buffer_game_screen.getContext('2d');
 
 			// We need to sniff out Android and iOS so that we can hide the address bar in our resize function.
 			var ua = navigator.userAgent.toLowerCase();
@@ -121,13 +121,13 @@ define(function () {
 
 			// Set the new canvas style width and height.
 			// note: our canvas is still 1023 x 682, but we're essentially scaling it with CSS.
-			this.canvasGameScreen.style.width = currentWidth + 'px';
-			this.canvasGameScreen.style.height = currentHeight + 'px';
+			this.canvas_game_screen.style.width = currentWidth + 'px';
+			this.canvas_game_screen.style.height = currentHeight + 'px';
 
 			this.scale = currentWidth / this.WIDTH;
 			// TODO Conversion from canvas pixels to css pixels.
-			// this.canvasGameScreen.offsetTop
-			// this.canvasGameScreen.offsetLeft
+			// this.canvas_game_screen.offsetTop
+			// this.canvas_game_screen.offsetLeft
 
 			// We use a timeout here because some mobile browsers don't fire if there is not a short delay.
 			window.setTimeout(function() {
