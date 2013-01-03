@@ -36,13 +36,13 @@
 
 */
 ;
-<span id='custom_fx'>/**
+<span id='CustomFx'>/**
 </span> * This class provides custom animations for DOM elements.
- * @class custom_fx
+ * @class CustomFx
  * @singleton
  */
 define({
-<span id='custom_fx-method-fadeout'>	/**
+<span id='CustomFx-method-fadeout'>	/**
 </span>	 * Hide an element by fading it to transparent.
 	 *
 	 * This method set the css display property to none.
@@ -67,13 +67,13 @@ define({
 	 *     });
 	 */
 	fadeout: function(element, callback) {
-		var myFx = new Fx.Tween(element, {
+		var my_fx = new Fx.Tween(element, {
 			duration: 500,
 			link: 'cancel',
 			property: 'opacity'
 		});
 
-		myFx.addEvent('complete', function(element) {
+		my_fx.addEvent('complete', function(element) {
 			element.setStyle('display', 'none');
 
 			if(typeof(callback) !== 'undefined') {
@@ -81,11 +81,11 @@ define({
 			}
 		});
 
-		myFx.start(1, 0);
+		my_fx.start(1, 0);
 
 		return element;
 	},
-<span id='custom_fx-method-fadein'>	/**
+<span id='CustomFx-method-fadein'>	/**
 </span>	 * Display an element by fading them to opaque.
 	 *
 	 * This method set the css display property to block.
@@ -115,13 +115,13 @@ define({
 			opacity: 0
 		});
 
-		var myFx = new Fx.Tween(element, {
+		var my_fx = new Fx.Tween(element, {
 			duration: 500,
 			link: 'cancel',
 			property: 'opacity'
 		});
 
-		myFx.addEvent('complete', function(element) {
+		my_fx.addEvent('complete', function(element) {
 			element.setStyle('display', 'block');
 
 			if(typeof(callback) !== 'undefined') {
@@ -129,7 +129,7 @@ define({
 			}
 		});
 
-		myFx.start(0, 1);
+		my_fx.start(0, 1);
 	}
 });
 </pre>

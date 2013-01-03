@@ -12,7 +12,7 @@
 			{
 				"name": "DOM manipulation",
 				"classes": [
-					"custom_fx"
+					"CustomFx"
 				]
 			}
 		]

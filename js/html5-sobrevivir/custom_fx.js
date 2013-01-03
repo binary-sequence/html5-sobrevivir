@@ -21,7 +21,7 @@
 ;
 /**
  * This class provides custom animations for DOM elements.
- * @class custom_fx
+ * @class CustomFx
  * @singleton
  */
 define({
