@@ -112,18 +112,27 @@ define(function () {
 			if(ua.indexOf('iphone') &gt; -1 || ua.indexOf('ipad') &gt; -1) {
 				this.ios = true;
 			}
+
+			this.resize();
 		},// END OF initialize
 <span id='Camera2d-method-resize'>		/**
 </span>		 * Resize the canvas in proportion to the new size of the window.
 		 */
 		resize: function() {
-
-			var currentWidth = window.innerWidth;
-			// Resize the height in proportion to the new width.
-			var currentHeight = currentWidth * this.RATIO;
+			var currentWidth = null;
+			var currentHeight = null;
+			if(window.innerWidth / window.innerHeight &gt; 800 / 600) {
+				currentHeight = window.innerHeight;
+				// Resize the width in proportion to the new height.
+				currentWidth = currentHeight * this.RATIO;
+			} else {
+				currentWidth = window.innerWidth;
+				// Resize the height in proportion to the new width.
+				currentHeight = currentWidth / this.RATIO;
+			}
 
 			// This will create some extra space on the page, allowing us to scroll past the address bar, thus hiding it.
-			if (POP.android || POP.ios) {
+			if (this.android || this.ios) {
 				document.body.style.height = (window.innerHeight + 50) + 'px';
 			}
 
@@ -133,6 +142,7 @@ define(function () {
 			this.canvasGameScreen.style.height = currentHeight + 'px';
 
 			this.scale = currentWidth / this.WIDTH;
+			// TODO Conversion from canvas pixels to css pixels.
 			// this.canvasGameScreen.offsetTop
 			// this.canvasGameScreen.offsetLeft
 
