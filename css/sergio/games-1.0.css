@@ -30,10 +30,7 @@ body {
 }
 
 #canvasGameScreen {
-	height:100%;
-	left:50%;
-	position:absolute;
-	top:50%;
-	width:100%;
+	background: #fff;
+	margin: 0 auto;
 }
 

@@ -41,11 +41,13 @@ function( game      ,  custom_fx      ) {
 	console.info('Event: Document ready.');
 
 	document.body.addEvent('contextmenu',function(e) {
-
 		console.info('Event: Context menu.');
-
 		e.stop();
+	});
 
+	window.addEvent('resize', function(e) {
+		console.info('Event: Window resize.');
+		game.camera2d.resize();
 	});
 
 	window.addEvent('click',function(e) {

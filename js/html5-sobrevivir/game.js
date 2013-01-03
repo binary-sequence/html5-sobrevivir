@@ -24,16 +24,21 @@
  * @class game
  * @singleton
  */
-define( [],
-function() {
+define( ['main/Camera2d'],
+function( Camera2d      ) {
 
 	return {
 		/**
-		 * @property {String} state State of the game.
+		 * State of the game.
 		 *
 		 * It could be "gamelicense", "resourceslicenses", "gamemenu", "playgame" or "credits".
 		 */
-		state: "gamelicense"
-	}
+		state: "gamelicense",
+		/**
+		 * Object that manages the canvas element.
+		 * @property {Camera2d}
+		 */
+		camera2d: new Camera2d()
+	};
 
 });
