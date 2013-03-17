@@ -134,7 +134,19 @@ define(function () {
 				window.scrollTo(0,1);
 			}, 1);
 
-		}// END OF resize method.
+		},// END OF resize method.
+		/**
+		 * Shows a message to the user.
+		 * @param {String} text Text to be shown to the user.
+		 * @param {String/Array} position Position of the text on the canvas.
+		 * Example:
+		 *     camera2d.show_message("Press 'A' key", 'bottom');
+		 * or
+		 *     camera2d.show_message("Press 'A' key", [500, 100]);
+		 */
+		show_message: function(text, position) {
+			// TODO EASELJS
+		}// END OF show_message method.
 	});
 
 });
